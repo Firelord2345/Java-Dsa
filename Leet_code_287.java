@@ -12,7 +12,7 @@ public class Leet_code_287 {
     static int duplicate(int []nums){
         for(int i=0; i<nums.length;i++){
             if(i!=nums[i]-1){
-                return i; 
+                return nums[i]; 
             }
          }
          return nums.length;
