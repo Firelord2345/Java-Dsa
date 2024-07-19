@@ -10,21 +10,18 @@ public class Leet_code_268{
 
     }
     static void cyclic_sort(int [ ] nums){
-        for(int i=0;i<nums.length;i++){
-            int correct_index=nums[i];
-            if(correct_index<nums.length)
-            {
-                if (nums[i]!=correct_index){
-                    int temp=nums[i];
-                    nums[i]=nums[correct_index];
-                    nums[correct_index]=temp;
-                }
-            }else{
-                int temp=nums[nums.length-1];
-                nums[nums.length-1]=nums[i];
-                nums[i]=temp;
+        int i=0;
+        while(i<nums.length){
+            int correct_index = nums[i];
+            if (nums[i] < nums.length && i!=correct_index) {
+                
+                int temp = nums[i];
+                nums[i] = nums[correct_index];
+                nums[correct_index] = temp;
+            } else {
+                i++;
             }
-        
+            
         }
     }
      static int to_find_missing_no(int []arr){
