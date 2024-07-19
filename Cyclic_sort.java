@@ -7,12 +7,15 @@ public class Cyclic_sort {
         System.out.println(Arrays.toString(arr));
     }
     static void cyclic_sort(int [ ] arr){
-        for(int i=0;i<arr.length;i++){
-            int correct_index=arr[i]-1;
-            if (i!=arr[i]-1){
-                int temp=arr[i];
-                arr[i]=arr[correct_index];
-                arr[correct_index]=temp;
+          int i = 0;
+        while (i < arr.length) {
+            int correct_index = arr[i] - 1;
+            if (i != correct_index) {
+                int temp = arr[i];
+                arr[i] = arr[correct_index];
+                arr[correct_index] = temp;
+            } else {
+                i++;
             }
         }
     }
