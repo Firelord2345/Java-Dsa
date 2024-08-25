@@ -1,0 +1,58 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Selection_Recursion",
+            "request": "launch",
+            "mainClass": "Selection_Recursion",
+            "projectName": "Java DSA_1e92bf70"
+        },
+        {
+            "type": "java",
+            "name": "Recursion_Pattern1",
+            "request": "launch",
+            "mainClass": "Recursion_Pattern1",
+            "projectName": "Java DSA_1e92bf70"
+        },
+        {
+            "type": "java",
+            "name": "Star_Pattern_3",
+            "request": "launch",
+            "mainClass": "Star_Pattern_3",
+            "projectName": "Java DSA_1e92bf70"
+        },
+        {
+            "type": "java",
+            "name": "Stars_Pattern",
+            "request": "launch",
+            "mainClass": "Stars_Pattern",
+            "projectName": "Java DSA_1e92bf70"
+        },
+        {
+            "type": "java",
+            "name": "Stars_Pattern_2",
+            "request": "launch",
+            "mainClass": "Stars_Pattern_2",
+            "projectName": "Java DSA_1e92bf70"
+        },
+        {
+            "type": "java",
+            "name": "StarPattern_5",
+            "request": "launch",
+            "mainClass": "StarPattern_5",
+            "projectName": "Java DSA_1e92bf70"
+        },
+        {
+            "name": "Streamlit",
+            "type": "python",
+            "request": "launch",
+            "program": "C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\streamlit.exe",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "run",
+                "dash.py"
+            ]
+        }
+    ]
+}

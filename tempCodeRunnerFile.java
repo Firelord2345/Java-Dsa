@@ -1,34 +1,26 @@
-import java.util.Arrays;
-
-public class Leet_code_287 {
+public class Mountain_Binary {
     public static void main(String[] args) {
-        int [] arr={3,1,3,4,2};
-        cyclic_sort(arr);
-        int z =duplicate(arr);
-        System.out.println(Arrays.toString(arr));
+        int[]nums={ 1, 2, 3, 4, 5, 3, 1};
+        int z= Mountain(nums);
         System.out.println(z);
     }
-   
-    static int duplicate(int []nums){
-        for(int i=0; i<nums.length;i++){
-            if(i!=nums[i]-1){
-                return i; 
-            }
-         }
-         return nums.length;
-    }
-    static void cyclic_sort(int [ ] nums){
-        int i = 0;
-      while (i < nums.length) {
-          int correct_index = nums[i] - 1;
-          if (nums[i] != nums[correct_index]) {
-              int temp = nums[i];
-              nums[i] = nums[correct_index];
-              nums[correct_index] = temp;
-          } else {
-              i++;
-          }
-      }
+    static int Mountain(int []nums){
+        int start = 0;
+        int end = nums.length - 1;
 
-  }
+        while (start < end) {
+            int mid = start + (end - start) / 2;
+            if ( nums[mid] < nums[mid + 1]) {
+                
+                start = mid + 1;
+            } else {
+                
+                end = mid;
+            }
+        }
+        
+        return start;
+    }
+    
 }
+
