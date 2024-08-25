@@ -1,10 +1,10 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Stars_Pattern {
     public static void main(String[] args) {
         Scanner in= new Scanner(System.in);
         int n=in.nextInt();
-        star_pattern( n);
+        star_pattern( n);    
     }
     static void star_pattern(int n){
         for(int row=0;row<n;row++){
