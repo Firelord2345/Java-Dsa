@@ -1,0 +1,1 @@
+ System.out.println(sll.deleteAtanyPostion(1));
