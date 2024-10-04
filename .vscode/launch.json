@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TwoSum",
+            "request": "launch",
+            "mainClass": "TwoSum",
+            "projectName": "Java-DSA_4689889e"
+        },
+        {
+            "type": "java",
             "name": "Selection_Recursion",
             "request": "launch",
             "mainClass": "Selection_Recursion",
